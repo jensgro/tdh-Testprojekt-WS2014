@@ -1,0 +1,56 @@
+/*  Das moderne Boxmodell. Damit können wir uns eine Containerebene für das Layout sparen. */
+/*  box sizing */
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+					box-sizing: border-box; 
+}
+
+.ym-wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+/*
+ * |-------------------------------------------------------|
+ * | content                             | sidebar         |
+ * | col 1 | flexible                    | col 3 | fixed   |
+ * |                                     |                 |
+ * |-------------------------------------------------------|
+ */
+
+.ym-column {
+  display: block;
+  overflow: hidden;
+  padding-right: 175px; /* column width */
+  width: auto;
+	background: #fff url("images/spaltenhintergrund-grau.gif") repeat-y right top;
+}
+
+.ym-col1 {  /* content */
+  position: relative;
+  float: left;
+  width: 100%;
+	padding: 0 20px 20px 20px;
+}
+
+.ym-col3 { /* sidebar */
+  position: relative;
+  float: left;
+  width: 175px; /* column width */
+  margin: 0 -175px 0 0;
+	padding-top: 200px;
+}
+
+/* Das Logo */
+.logo {
+	margin: 50px 0 30px 0;
+}
+
+/*  Der Footer */
+.sitefooter {
+	overflow: hidden;
+}
+
+.sitefooter a {
+	float: right;
+	margin-left: 20px;
+}

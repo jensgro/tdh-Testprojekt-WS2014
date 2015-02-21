@@ -1,0 +1,282 @@
+/**
+ * "Yet Another Multicolumn Layout" - YAML CSS Framework
+ *
+ * (en) Uniform design of standard content elements
+ * (de) Einheitliche Standardformatierungen für die wichtigten Inhalts-Elemente
+ *
+ * @copyright       © 2005-2013, Dirk Jesse
+ * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-CDL (http://www.yaml.de/license.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ * @version         4.1.2
+ */
+
+  /*
+  * @section global typography settings
+  *
+  * vertical rhythm settings (based on em-unit)
+  * -------------------------------------------
+  * basefont-size:  14px (87.5%)
+  * line-height  :  21px (factor: 1.5) */
+  /* (en) reset font size for all elements to standard (16 Pixel) */
+  /* (de) Alle Schriftgrößen auf Standardgröße (16 Pixel) zurücksetzen */
+  html * {
+    font-size: 100%;
+  }
+
+  /**
+  * (en) reset monospaced elements to font size 16px in all browsers
+  * (de) Schriftgröße von monospaced Elemente in allen Browsern auf 16 Pixel setzen
+  *
+  * @see: http://webkit.org/blog/67/strange-medium/
+  */
+  textarea,
+  pre,
+  code,
+  kbd,
+  samp,
+  var,
+  tt {
+    font-family: Consolas, "Lucida Console", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier;
+  }
+
+  /* font-size: 14px; */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+    color: #19171B;
+  }
+
+  /*--- Headings | Überschriften ------------------------------------------------------------------------*/
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: normal;
+    color: #ad1921;
+    line-height: 1.5;
+    margin: 0 0 10px 0;
+  }
+
+  h1 {
+    /* font-size: 48px; */
+    font-size: 342.85714%;
+  }
+
+  h2 {
+    /* font-size: 32px; */
+    font-size: 228.57143%;
+  }
+
+  h3 {
+    /* font-size: 24px; */
+    font-size: 171.42857%;
+  }
+
+  h4 {
+    /* font-size: 21px; */
+    font-size: 150%;
+  }
+
+  h5 {
+    /* font-size: 18px; */
+    font-size: 128.57143%;
+  }
+
+  h6 {
+    /* font-size: 14px; */
+    font-size: 100%;
+    font-weight: bold;
+  }
+
+  /* --- Lists | Listen  -------------------------------------------------------------------------------- */
+  ul,
+  ol,
+  dl {
+    font-size: 100%;
+    line-height: 1.5;
+    margin: 0 0 1.5em 0;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  ul ul {
+    list-style-type: circle;
+    margin-top: 0;
+  }
+
+  ol ol {
+    list-style-type: lower-latin;
+    margin-top: 0;
+  }
+
+  ol ul {
+    list-style-type: circle;
+    margin-top: 0;
+  }
+
+  li {
+    font-size: 100%;
+    line-height: 1.5;
+    margin-left: 1.2em;
+  }
+
+  dt {
+    font-weight: bold;
+  }
+
+  dd {
+    margin: 0 0 1.5em 0.8em;
+  }
+
+  /* --- general text formatting | Allgemeine Textauszeichnung ------------------------------------------ */
+  p {
+    font-size: 100%;
+    line-height: 1.5;
+    margin: 0 0 1.5em 0;
+  }
+
+  blockquote,
+  cite,
+  q {
+    font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+  }
+
+  blockquote {
+    background: transparent;
+    color: #666666;
+    margin: 1.5em 0 0 1.5em;
+  }
+
+  strong,
+  b {
+    font-weight: bold;
+  }
+
+  em,
+  i {
+    font-style: italic;
+  }
+
+  big {
+    /* font-size: 16px; */
+    font-size: 114.28571%;
+    line-height: 1.3125;
+  }
+
+  small {
+    /* font-size: 12px; */
+    font-size: 85.71429%;
+    line-height: 1.75;
+  }
+
+  pre,
+  code,
+  kbd,
+  tt,
+  samp,
+  var {
+    font-size: 100%;
+  }
+
+  pre {
+    font-size: 100%;
+    line-height: 1.5;
+    margin: 0 0 1.5em 0;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  pre,
+  code {
+    color: #880000;
+  }
+
+  kbd,
+  samp,
+  var,
+  tt {
+    color: #666666;
+    font-weight: bold;
+  }
+
+  var,
+  dfn {
+    font-style: italic;
+  }
+
+  acronym,
+  abbr {
+    border-bottom: 1px #aaa dotted;
+    font-variant: small-caps;
+    letter-spacing: .07em;
+    cursor: help;
+  }
+
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+
+  sup {
+    top: -0.5em;
+  }
+
+  sub {
+    bottom: -0.25em;
+  }
+
+  mark {
+    background: yellow;
+    color: black;
+  }
+
+  hr {
+    color: #fff;
+    background: transparent;
+    margin: 0 0 0.75em 0;
+    padding: 0 0 0.67857em 0;
+    border: 0;
+    border-bottom: 1px #eeeeee solid;
+  }
+
+  /*--- Links ----------------------------------------------------------------------------------------- */
+  a {
+    color: #ad1921;
+    text-decoration: none;
+  }
+
+  a:active {
+    outline: none;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+
+  /* --- images ------------------ */
+  img,
+  figure {
+    margin: 0;
+  }
+
+  .flexible {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }

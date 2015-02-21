@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Modulübersicht</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+      /* styling basics */
+
+      html {
+        padding: 20px 0;
+        background-color: #efefef;
+      }
+      body {
+        width: 80%;
+        padding: 40px;
+        margin: 0 auto;
+        background: #fff;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 14px;
+      }
+      /* clearfix */
+
+      .clearfix:after {
+        clear: both;
+        content: ".";
+        display: block;
+        font-size: 0;
+        height: 0;
+        visibility: hidden;
+      }
+      .clearfix {
+        display: block;
+      }
+      /* extra for Safari */
+
+      .clearfix {
+        *height: 1%;
+      }
+      /* trigger hasLayout for IE6 + 7 */
+
+      h2 {
+        color: #34495e;
+        padding: 20px 0;
+        margin-top: 20px;
+        border-top: 2px solid #34495e;
+        border-bottom: 2px dotted #34495e;
+      }
+      img {
+        width: auto;
+        height: auto;
+        max-width: 100%
+      }
+      .liegtvor {
+        border-bottom-color: #006B10;
+      }
+      .liegtvor:after {
+        content: "Liegt vor!";
+        display: inline-block;
+        margin-left: 40px;
+        font-weight: bold;
+        color: #006B10;
+      }
+      .liegtnichtvor {
+        border-bottom-color: #a20000;
+      }
+      .liegtnichtvor:after {
+        content: "Liegt nicht vor!";
+        display: inline-block;
+        margin-left: 40px;
+        font-weight: bold;
+        color: #a20000;
+      }
+      /**
+         * @section Grid Module
+         */
+
+      .ym-grid {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        list-style-type: none;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .ym-gl {
+        float: left;
+        margin: 0;
+      }
+      .ym-gr {
+        float: right;
+        margin: 0 0 0 -5px;
+      }
+      .ym-g20 {
+        width: 20%;
+      }
+      .ym-g40 {
+        width: 40%;
+      }
+      .ym-g60 {
+        width: 60%;
+      }
+      .ym-g80 {
+        width: 80%;
+      }
+      .ym-g25 {
+        width: 25%;
+      }
+      .ym-g33 {
+        width: 33.333%;
+      }
+      .ym-g50 {
+        width: 50%;
+      }
+      .ym-g66 {
+        width: 66.666%;
+      }
+      .ym-g75 {
+        width: 75%;
+      }
+      .ym-g38 {
+        width: 38.2%;
+      }
+      .ym-g62 {
+        width: 61.8%;
+      }
+      .ym-gbox {
+        padding: 0 10px;
+      }
+      .ym-gbox-left {
+        padding: 0 10px 0 0;
+      }
+      .ym-gbox-right {
+        padding: 0 0 0 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Die Module des Testprojektes</h1>
+
+    <h2 class="liegtnichtvor">Akkordeon</h2>
+    <div class="ym-grid">
+      <div class="ym-g50 ym-gl">
+        <div class="ym-gbox-left">
+          <img src="Akkordeon.png" alt="">
+        </div>
+      </div>
+      <div class="ym-g50 ym-gr">
+        <div class="ym-gbox-right">
+          <h3 class="bearbeiter">[Bearbeiter]</h3>
+          <p>Es soll immer nur maximal ein Eintrag des Akkordeons geöffnet sein. Das Öffnen eines neuen Eintrags schliesst also den bereits geöffneten. Als Grundlage hierfür wird jQuery genutzt. Ist dies geschafft, sollte das Akkordeon mit den passenden <a href="">WAI-ARIA</a>-Attributen versehen werden. Damit wird die Bedienbarkeit auch für Screenreader gesichert. Hierzu gibt es ein paar hilfreiche Links:</p>
+          <ol>
+            <li><a href="http://karlgroves-sandbox.com/CheatSheets/ARIA-Cheatsheet.html">ARIA-Cheatsheet</a></li>
+            <li><a href="http://www.chemnitzer-14.de/html5-und-wai-aria-oder-die-suppe-nicht-versalzen/">Einführung in WAI-ARIA von Jan-Eric Hellbusch</a></li>
+            <li><a href="http://heydonworks.com/practical_aria_examples/#progressive-collapsibles">dieses Beispiel sollte als Blaupause genügen</a></li>
+            <li><a href="https://github.com/anvk/a11yAccordion">gutes jQuery-Plugin</a></li>
+            <li><a href="http://www.sitepoint.com/introducing-accessible-accordion-widget/">Artikel über die Nutzung des besagten jQuery-Plugins</a></li>
+          </ol>
+          <p>Wenn genügend Zeit ist, sollte nicht einfach das fertige jQuery-Plugin genutzt und gestylt werden. Stattdessen kann das Plugin als Anschauungsmaterial für die richtige Implementierung der Technik dienen.</p>
+          <p><strong>Hinweis:</strong> Der Strich unter dem dritten Satz ist ein Überbleibsel des Layouts. Dort wurde mittels eines Browserscreenshots demonstriert, wieviel Inhalt ohne zu Scrollen initial zu sehen ist.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="liegtnichtvor">Ansprechpartner</h2>
+    <div class="ym-grid">
+      <div class="ym-g50 ym-gl">
+        <div class="ym-gbox-left">
+          <img src="Ansprechpartner.png" alt="">
+        </div>
+      </div>
+      <div class="ym-g50 ym-gr">
+        <div class="ym-gbox-right">
+          <h3 class="bearbeiter">[Bearbeiter]</h3>
+          <p>Von diesem Widget benötigen wir zwei oder drei Exemplare mit unterschiedlichem Namen.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="liegtnichtvor">Kontaktformular</h2>
+    <div class="ym-grid">
+      <div class="ym-g50 ym-gl">
+        <div class="ym-gbox-left">
+          <img src="Kontaktformular.png" alt="">
+        </div>
+      </div>
+      <div class="ym-g50 ym-gr">
+        <div class="ym-gbox-right">
+          <h3 class="bearbeiter">[Bearbeiter]</h3>
+          <p>Der Punkt im Absendebutton ist ein Grafikfehler und wird nicht realisiert. Es kann also ein ganz normales Input-Feld oder ein Button genommen werden. Das Selectfeld sieht so seltsam aus, weil der Screenshot auf einem Mac gemacht wurde. Genau wie die Eingabefelder sollte das Selectfeld nur mit <code>border</code> und <code>padding</code> gestaltet werden.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="liegtnichtvor">Navigation</h2>
+    <div class="ym-grid">
+      <div class="ym-g50 ym-gl">
+        <div class="ym-gbox-left">
+          <img src="Navigation.png" alt="">
+          <img src="navigation-untermenue.png" alt="">
+          <img src="navigation-untermenue-meldungen.png" alt="">
+        </div>
+      </div>
+      <div class="ym-g50 ym-gr">
+        <div class="ym-gbox-right">
+          <h3 class="bearbeiter">[Bearbeiter]</h3>
+          <p>Entgegen erster Ideen wird die Navigation nicht mit einem Hover-Mechanismus versehen. Die Untermenüs werden nur im jeweiligen Menübereich gezeigt. Die Einfärbung im Untermenü "Meldungen" geschieht mit den im Projekt verwendeten primären Farben. Alle anderen Untermenüs arbeiten wie das Hauptmenü nur mit der Umrandung der aktiven Navigations-Items. Für das Menü benötigen wir <strong>kein JavaScript</strong>.</p>
+          <p>Im Unterordner "modules" sind schon alle Bestandteile der Navigation hinterlegt. Und in "<mark>inc/templates/template-parts</mark>" ist das Include "<mark>navigation.inc</mark>" vorbereitet. Es enthält alle Menüs, die mit einer Variablen in der jeweiligen Seite ausgewählt werden.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="liegtnichtvor">Spendenbuttons</h2>
+    <div class="ym-grid">
+      <div class="ym-g50 ym-gl">
+        <div class="ym-gbox-left">
+          <img src="Spendenbutton.png" alt=""> <br>
+          <img src="Unser-Spendenkonto.png" alt="">
+        </div>
+      </div>
+      <div class="ym-g50 ym-gr">
+        <div class="ym-gbox-right">
+          <h3 class="bearbeiter">[Bearbeiter]</h3>
+          <p>Diese Buttons sollen entgegen dem Layout die gleiche Breite haben und auch leicht aus der grauen Spalte links und rechts rausragen. Beide Buttons könnten absolut positioniert werden. Andere Alternativen können gerne getestet werden. Immer bitte dabei bedenken, dass diese Buttons wohl immer in der Seitenleiste sein werden, hin und wieder ergänzt durch weitere.</p>
+          <p>Im Screenhot kommen Bestandteile des grauen Seitenhintergrundes und des Broewserfensters vor. Bitte nicht irritieren lassen.</p>
+        </div>
+      </div>
+    </div>
+    <h2 class="liegtnichtvor">Sponsorendank</h2>
+    <div class="ym-grid">
+      <div class="ym-g50 ym-gl">
+        <div class="ym-gbox-left">
+          <img src="Sponsorendank.png" alt="">
+        </div>
+      </div>
+      <div class="ym-g50 ym-gr">
+        <div class="ym-gbox-right">
+          <h3 class="bearbeiter">[Bearbeiter]</h3>
+          <p>Der Strich durch das Logo ist ein Überbleibsel des Browser-Screenshots, der im Layout verwendet wird. Er hat keine Bedeutung für uns.</p>
+        </div>
+      </div>
+    </div>
+    <h2 class="liegtnichtvor">Sponsorenliste</h2>
+    <div class="ym-grid">
+      <div class="ym-g50 ym-gl">
+        <div class="ym-gbox-left">
+          <img src="Sponsorenliste.png" alt="">
+        </div>
+      </div>
+      <div class="ym-g50 ym-gr">
+        <div class="ym-gbox-right">
+          <h3 class="bearbeiter">[Bearbeiter]</h3>
+          <p>Die Logos sind alle verlinkt. Machen Sie sich Gedanken, wie das Feedback aussieht, wenn man mit der Maus über das Logo fährt. Denken Sie daran: wo <code>:hover</code> steht, steht auch <code>:focus</code>!</p>
+        </div>
+      </div>
+    </div>
+    <h2 class="liegtnichtvor">Tabelle 1</h2>
+    <div class="ym-grid">
+      <div class="ym-g50 ym-gl">
+        <div class="ym-gbox-left">
+          <img src="Tabelle-1.png" alt="">
+        </div>
+      </div>
+      <div class="ym-g50 ym-gr">
+        <div class="ym-gbox-right">
+          <h3 class="bearbeiter">[Bearbeiter]</h3>
+          <p>Die beiden Selectfelder sehen nur deshalb so aus, weil das Design an einem Mac gemacht wurde. Die Selectfelder sollen nur mit <code>border</code> und <code>padding</code> formatiert werden. <strong>Wenden Sie sich an das Team für das Formular und übernehmen Sie die Styles.</strong></p>
+          <p>Der Strich durch die Tabelle ist ein Überbleibsel des Browser-Screenshots, der im Layout verwendet wird. Er hat keine Bedeutung für uns.</p>
+
+        </div>
+      </div>
+    </div>
+    <h2 class="liegtnichtvor">Contentwidget - transparenter Hintergrund</h2>
+    <div class="ym-grid">
+      <div class="ym-g50 ym-gl">
+        <div class="ym-gbox-left">
+          <img src="Zusatzwidget-content.png" alt=""> <br>
+          <img src="Zusatzwidget-Content-2.png" alt=""> <br>
+          <img src="Zusatzwidget-Content-3.png" alt="">
+        </div>
+      </div>
+      <div class="ym-g50 ym-gr">
+        <div class="ym-gbox-right">
+          <h3 class="bearbeiter">[Bearbeiter]</h3>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="liegtnichtvor">Contentwidget blauer Hintergrund</h2>
+    <div class="ym-grid">
+      <div class="ym-g50 ym-gl">
+        <div class="ym-gbox-left">
+          <img src="Zusatzwidget-Content-4.png" alt=""> <br>
+          <img src="Zusatzwidget-Content-5.png" alt=""> <br>
+          <img src="Zusatzwidget-Content-6.png" alt=""> <br>
+          <img src="Zusatzwidget-Content-7.png" alt="">
+        </div>
+      </div>
+      <div class="ym-g50 ym-gr">
+        <div class="ym-gbox-right">
+          <h3 class="bearbeiter">[Bearbeiter]</h3>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>
