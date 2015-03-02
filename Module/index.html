@@ -73,6 +73,13 @@
         font-weight: bold;
         color: #a20000;
       }
+      
+      .contentwidget {
+        display: block;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #439671;
+      }
       /**
          * @section Grid Module
          */
@@ -142,6 +149,7 @@
 
   <body>
     <h1>Die Module des Testprojektes</h1>
+    <p>Inhaltliches Vorbild ist die Seite der <a href="http://www.tdh-murgtal.de/">Terre des Hommes Sektion Murgtal</a>. Optisch soll sich die Neuentwicklung natürlich nicht am aktuellen Stand orientieren.</p>
 
     <h2 class="liegtnichtvor">Akkordeon</h2>
     <div class="ym-grid">
@@ -204,6 +212,7 @@
           <img src="Navigation.png" alt="">
           <img src="navigation-untermenue.png" alt="">
           <img src="navigation-untermenue-meldungen.png" alt="">
+          <img src="Navigation-Pressearchiv.png" alt="">
         </div>
       </div>
       <div class="ym-g50 ym-gr">
@@ -214,6 +223,22 @@
         </div>
       </div>
     </div>
+
+    <h2 class="liegtnichtvor">Pressearchiv</h2>
+    <div class="ym-grid">
+      <div class="ym-g50 ym-gl">
+        <div class="ym-gbox-left">
+          <img src="Pressearchiv.png" alt="">
+        </div>
+      </div>
+      <div class="ym-g50 ym-gr">
+        <div class="ym-gbox-right">
+          <h3 class="bearbeiter">[Bearbeiter]</h3>
+          <p>Drei angerissene Pressemeldungen, die am Ende zum Artikel verweisen.</p>
+        </div>
+      </div>
+    </div>
+    
 
     <h2 class="liegtnichtvor">Spendenbuttons</h2>
     <div class="ym-grid">
@@ -259,34 +284,52 @@
         </div>
       </div>
     </div>
-    <h2 class="liegtnichtvor">Tabelle 1</h2>
+    <h2 class="liegtnichtvor">Sponsorentabelle</h2>
     <div class="ym-grid">
       <div class="ym-g50 ym-gl">
         <div class="ym-gbox-left">
-          <img src="Tabelle-1.png" alt="">
+          <img src="Sponsorentabelle.png" alt="">
         </div>
       </div>
       <div class="ym-g50 ym-gr">
         <div class="ym-gbox-right">
           <h3 class="bearbeiter">[Bearbeiter]</h3>
-          <p>Die beiden Selectfelder sehen nur deshalb so aus, weil das Design an einem Mac gemacht wurde. Die Selectfelder sollen nur mit <code>border</code> und <code>padding</code> formatiert werden. <strong>Wenden Sie sich an das Team für das Formular und übernehmen Sie die Styles.</strong></p>
-          <p>Der Strich durch die Tabelle ist ein Überbleibsel des Browser-Screenshots, der im Layout verwendet wird. Er hat keine Bedeutung für uns.</p>
+          <p>Die Tabelle ist nicht mit JavaScript erweitert, denn das würde das Frontend zu sehr stressen. Es handelt sich also um ein echtes Formular. Anstatt umständlich die Logos hinzuzufügen, können Sie - wie in dieser Umsetzung - einfach Platzhalterbilder nutzen. Am Ende der Tabelle wird ein Paging-Modul hinzugefügt, mit dem man die weiteren "Seiten" der Tabelle vom Server abfragt. Die serverseitige Programmierung ist nicht Teil der Aufgabe.</p>
+          <p>Damit Sie sich auf die Problemlsöung konzentrieren, habe ich Ihnen drei schlichte Tabellen schon vorbereitet: <strong>inc/modules/tables/tabelle-sponsoren-1.inc</strong>, <strong>inc/modules/tables/tabelle-sponsoren-2.inc</strong> und <strong>inc/modules/tables/tabelle-sponsoren-3.inc</strong>. Das Formular am Anfang und den Pager am Schluss müssen Sie logischerweise noch hinzufügen.</p>
 
         </div>
       </div>
     </div>
-    <h2 class="liegtnichtvor">Contentwidget - transparenter Hintergrund</h2>
+    
+    <h2 class="liegtnichtvor">Mitarbeitertabelle</h2>
     <div class="ym-grid">
       <div class="ym-g50 ym-gl">
         <div class="ym-gbox-left">
-          <img src="Zusatzwidget-content.png" alt=""> <br>
-          <img src="Zusatzwidget-Content-2.png" alt=""> <br>
-          <img src="Zusatzwidget-Content-3.png" alt="">
+          <img src="Mitarbeitertabelle.png" alt="">
         </div>
       </div>
       <div class="ym-g50 ym-gr">
         <div class="ym-gbox-right">
           <h3 class="bearbeiter">[Bearbeiter]</h3>
+          <p>Die Landkarte ist <strong>team-regionen.gif</strong> und liegt im Bilderverezichnis. Die Tabelle befindet sich in <strong>inc/modules/tables/tabelle-mitarbeiter.inc</strong>. Sie ist im Rohformat, damit Sie nichts abtippen müssen. Ergänzungen wir Klassen, eine ID oder zusätzlichen Text sind erlaubt bzw. gewünscht.</p>
+
+        </div>
+      </div>
+    </div>
+    
+    <h2 class="liegtnichtvor">Contentwidget - transparenter Hintergrund</h2>
+    <div class="ym-grid">
+      <div class="ym-g50 ym-gl">
+        <div class="ym-gbox-left">
+          <img class="contentwidget" src="Zusatzwidget-content.png" alt=""> 
+          <img class="contentwidget" src="Zusatzwidget-Content-2.png" alt=""> 
+          <img class="contentwidget" src="Zusatzwidget-Content-3.png" alt="">
+        </div>
+      </div>
+      <div class="ym-g50 ym-gr">
+        <div class="ym-gbox-right">
+          <h3 class="bearbeiter">[Bearbeiter]</h3>
+          <p>Die grünen Linien sind als optische Trenner nur für dieses Dokument gedacht, damit Sie wissen, welche Inhalte die Widgets tatsächlich haben.</p>
         </div>
       </div>
     </div>
