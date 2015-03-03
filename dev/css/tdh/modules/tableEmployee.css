@@ -10,13 +10,13 @@
 }
 
 .tableEmployee th {
-    border-top:2px solid gray;
-    border-bottom:2px solid gray;
+    border-top:2px solid gray; /* TODO: correct color */
+    border-bottom:2px solid gray; /* TODO: correct color */
     padding: 6px;
 }
 
 .tableEmployee th ~ th {
-       color:gray;
+       color:gray; /* TODO: correct color */
 }
 
 .tableEmployee {

@@ -1,0 +1,84 @@
+/* this is gonna be great! */
+/* This is a little branch test. wohooooo */
+
+.tableSponsors tr:nth-child(even) {
+    background:#E1E1E1;   
+}
+
+.tableSponsors td, th {
+    padding:15px;
+}
+
+.tableSponsors th {
+    border-bottom:2px solid gray; /* TODO: correct color */
+    padding-bottom:20px;
+}
+
+.tableSponsors {
+    width:100%;   
+}
+
+.tableSponsors a {
+ font-weight:bold;   
+}
+
+/* filter */
+
+.tableSponsorsFilter {
+    font-weight:bold; 
+    margin-left:15px;
+}
+
+.tableSponsorsFilter select {
+    margin-left:4px;
+    margin-right:4px;
+    text-align:center;
+}
+
+.tableSponsorsFilter span {
+    margin-right:8px;   
+}
+
+.tableSponsorsFilter label:nth-child(n+2) {
+    margin-right:10px;   
+}
+
+.tableSponsorsFilter input[type="submit"] {
+    color:#fff;
+    background:#AD1921;
+    border:1px solid #AD1921;
+    padding: 0px 2px;
+}
+
+/* pager */
+
+.pager {
+    height:30px;
+    text-align:center;
+    margin-top:20px;  
+}
+
+.pager ul {
+    list-style-type:none;
+}
+
+.pager li {
+    display:inline-block;
+    margin:0px;
+}
+
+.pager a {
+    border:1px solid #B1B3B3;
+    padding:4px 8px;
+}
+
+.pager a:hover, .pager a:focus, .pager .selected {
+    color:white;
+    background:#AD1921;
+    text-decoration:none;
+}
+
+.pager .inactive, .pager .inactive:hover, .pager .inactive:focus {
+    color:gray; /* TODO: color */
+    background:#fff;
+}
