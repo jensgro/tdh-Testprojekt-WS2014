@@ -5,6 +5,8 @@
     <main class="ym-col1">
       <h1 class="logo"><a href="index.php"><img src="images/logo-tdh-murgtal.gif" alt="Logo von Terre des Hommes Murgtal/Mittelbaden"><span class="ym-hideme">terre des hommes Murgtal/Mittelbaden</span></a></h1>
 
+      <?php include "inc/templates/template-parts/navigation.inc"; ?>
+      
         <h2 class="ym-hideme" id="maincnt">Der Inhaltsbereich</h2>
 
         <div class="ym-grid">
