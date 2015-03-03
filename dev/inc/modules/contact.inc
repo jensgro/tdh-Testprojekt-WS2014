@@ -8,7 +8,7 @@
 		</header>
 		
 		<label class="select-thema">Was ist Ihr Anliegen</label>
-		<span class="sub">Wählen Sie bitte aus, worum es Ihnen geht - so finden wir schneller den richtigen Ansprechpartner.</span>
+		<small class="sub1">Wählen Sie bitte aus, worum es Ihnen geht - so finden wir schneller den richtigen Ansprechpartner.</small>
 		<select>
 			<option selected="selected" value="Allgemeines">Allgemeines</option>
 			<option value="Allgemeines 2">Allgemeines 2</option>
@@ -17,16 +17,19 @@
 			<option value="Other">Other</option>
 		</select>
 		
-		<label class="name-label" required>Name*</label>
+<label class="name-label" required>Ihr Name*</label>
 		<input class="name" type="text" placeholder="Ihr Name" value="" size="14">
-		
+				
 		<label class="mail-label" required>Ihre E-Mail Addresse*</label>
 		<input class="mail" type="text" placeholder="Ihre E-Mail Addresse" value="" size="14">
 		
-		<label class="message-label" required>Name*</label>
-		<span class="sub">Hinterlassen Sie hier auch ihre Addresse oder Telefonnummer, wenn Sie möchten, dass wir telefonisch oder schriftlich mit Ihnen in Kontakt treten.</span>
-		<textarea class="message" required rows="10" cols="50" tabindex="8" placeholder="Ihre Nachricht an tdh Murgtal"></textarea>
+		<label class="message-label" required>Nachricht*</label>
+		<small class="sub1">Hinterlassen Sie hier auch ihre Addresse oder Telefonnummer, wenn Sie möchten, dass wir telefonisch oder schriftlich mit Ihnen in Kontakt treten
+    </small>
+		<textarea class="message" required rows="10" cols="35" tabindex="8" placeholder="Ihre Nachricht an tdh Murgtal"></textarea>
+    
 		
-		<button class="send">Nachricht Senden</button>
+    
+		<button class="send" onclick="">Nachricht Senden</button>
 	</form>
 </div>
