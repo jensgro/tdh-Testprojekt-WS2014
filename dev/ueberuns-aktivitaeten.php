@@ -11,8 +11,9 @@ $contentleftincludes = array(
 );
 
 $contentrightincludes = array(
-    'leer.inc'
+    'content-widget/ueberuns.inc'
 );
+
 
 $sideincludes = array(
     'leer.inc'

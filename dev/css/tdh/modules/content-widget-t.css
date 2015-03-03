@@ -1,0 +1,44 @@
+/* styling for content widgets with transparent background */
+
+.content-widget-t {
+    font-size: 0.8em;
+    background-color: transparent;
+    width: 245px;
+    display: inline-block;
+    border-bottom: 2px solid #B1B3B3;
+    margin-bottom: 1.5em;
+}
+
+.content-widget-t img {
+    padding-bottom: 5px;
+}
+
+.content-widget-t .section-title  {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #6F6F6F;
+}
+
+.content-widget-t h5 {
+    padding: 5px 0;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.content-widget-t .subtitle {
+    color: #000000;
+    display: block;
+    font-weight: bold;
+}
+
+.content-widget-t p {
+    margin: 0 0 0.5em 0;
+}
+
+.content-widget-t li {
+    color: #AD1921;
+}
+
+.content-widget-t ul {
+    margin: 0 0 1em 0;
+}
