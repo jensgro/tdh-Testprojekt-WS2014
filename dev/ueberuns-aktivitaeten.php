@@ -10,7 +10,7 @@
 	);
   
 	$contentrightincludes = array(
-    'leer.inc'
+    'content-widget/ueberuns.inc'
 	);
 
 	$sideincludes = array(

@@ -4,7 +4,7 @@
 	$navigation = "dasteam";
 
 	$contentleftincludes = array(
-    'leer.inc'
+        'content-widget/team.inc'
 	);
   
 	$contentrightincludes = array(

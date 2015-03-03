@@ -6,8 +6,7 @@
 
 	// leer.inc ist nur ein Platzhalter, der gelöscht werden muss.
 	$contentleftincludes = array(
-	   'leer.inc',
-	   'leer.inc'
+	   'content-widget/home.inc'
 	);
 
 	$contentrightincludes = array(
