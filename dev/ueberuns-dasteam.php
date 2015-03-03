@@ -8,6 +8,7 @@
 	);
   
 	$contentrightincludes = array(
+    'tables/tabelle-mitarbeiter-text.inc',
     'tables/tabelle-mitarbeiter.inc'
 	);
 
