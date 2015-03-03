@@ -6,9 +6,8 @@
 
 /* Vorschlag für die Typographie - aus YAML - -- wird überarbeitet */
 @import url("tdh/typography.css");
-
+@import url("tdh/modules/akkordeon.css");
 
 /* Hier kommen die Module hin */
 /* @import url("tdh/modules/xxx.css"); */
-
-@import url("tdh/modules/akkordeon.css");
+@import url("tdh/modules/navigation-standard.css");
