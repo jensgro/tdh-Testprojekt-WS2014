@@ -19,3 +19,8 @@ $(function () {
         TDH.initAkkordeon();
     }
 });
+
+/* include tablesorter-script */
+$.getScript("tablesorter.js", function() {
+	$("#mitarbeitertabelle").tablesorter();
+});
