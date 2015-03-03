@@ -1,5 +1,3 @@
-<h2>Unsere Aktivitäten</h2>
-
 <?php
 $articles = [
     "Radbörse",
@@ -8,27 +6,10 @@ $articles = [
     "Basar"
 ];
 ?>
-
-<div class="accordeon">
-    <?php for ($i = 0; $i < 3; $i++) : ?>
-        <article>
-            <h3>Foo</h3>
-
-            <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium, amet beatae
-                    doloremque doloribus nihil perferendis? Aliquid consectetur consequatur facere, hic iste, laboriosam
-                    magni molestiae, neque odio quo repellendus voluptates!
-                </p>
-            </div>
-        </article>
-    <?php endfor; ?>
-</div>
-
 <div class="accordeon">
     <?php foreach ($articles as $art) : ?>
         <article>
             <h3><?php echo $art; ?></h3>
-
             <div class="content">
                 <p>
                     Jemand musste Josef K. verleumdet haben, denn ohne
