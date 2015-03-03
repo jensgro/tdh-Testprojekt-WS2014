@@ -16,7 +16,8 @@
   font-weight:bold;
    margin-bottom:10px;
 }
-.project-info:hover{
+.project-info:hover,
+.projekt-info:focus{
   text-decoration:underline;
 }
 .name{

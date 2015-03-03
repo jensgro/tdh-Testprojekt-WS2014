@@ -62,7 +62,8 @@
   border: 0;
   cursor: pointer;
 }
-.contactform button:hover{
+.contactform button:hover,
+.contactform button:focus{
   background: #cD3941
 }
 .contactform button:active{
