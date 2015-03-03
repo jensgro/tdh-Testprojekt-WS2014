@@ -1,21 +1,22 @@
 <?php
-  $pagetitle= "Über uns - Unsere Aktivitäten";
+$pagetitle = "Über uns - Unsere Aktivitäten";
 
-  $navigation = "aktivitaeten";
+$navigation = "aktivitaeten";
 
-	$pageheadline ="Unsere Aktivitäten";
+$pageheadline = "Unsere Aktivitäten";
 
-	$contentleftincludes = array(
+$contentleftincludes = array(
+    'leer.inc',
+    'accordeon.inc'
+);
+
+$contentrightincludes = array(
     'leer.inc'
-	);
-  
-	$contentrightincludes = array(
+);
+
+$sideincludes = array(
     'leer.inc'
-	);
+);
 
-	$sideincludes = array(
-		'leer.inc'
-	);
-
-	include 'inc/templates/template-2-1.inc';
+include 'inc/templates/template-2-1.inc';
 ?>
