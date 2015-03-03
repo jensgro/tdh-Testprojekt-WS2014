@@ -1,14 +1,14 @@
-﻿<?php
+<?php
   $pagetitle= "Das Team - terre des hommes Murgtal/Mittelbaden";
 
 	$navigation = "dasteam";
 
 	$contentleftincludes = array(
-    'leer.inc'
+    'tables/tabelle-mitarbeiter-bild.inc'
 	);
   
 	$contentrightincludes = array(
-    'leer.inc'
+    'tables/tabelle-mitarbeiter.inc'
 	);
 
 	$sideincludes = array(
