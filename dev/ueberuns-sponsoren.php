@@ -10,9 +10,9 @@
 	);
 
 	$contentrightincludes = array(
-    'tables/tabelle-sponsoren-1-filter.inc',
+    'tables/tabelle-sponsoren-filter.inc',
     'tables/tabelle-sponsoren-1.inc',
-    'tables/tabelle-sponsoren-1-pager.inc'
+    'tables/tabelle-sponsoren-pager.inc'
 	);
 
 	$sideincludes = array(
