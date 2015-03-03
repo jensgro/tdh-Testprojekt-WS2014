@@ -1,0 +1,24 @@
+.navigation{
+    font-size:14px;
+}
+li {
+    list-style-type:none;
+    display:inline;
+    padding:5px;
+    
+}
+li a{
+    color:#6F6F6F;
+   
+}
+li a:hover,li a:focus{
+    color:#AD1921;
+    text-decoration: none;
+}
+li a:active{
+    color:#AD1921;
+    text-decoration: none;
+}
+.active a{
+    color:#AD1921;
+}
