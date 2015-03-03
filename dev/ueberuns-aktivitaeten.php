@@ -7,7 +7,7 @@ $pageheadline = "Unsere Aktivitäten";
 
 $contentleftincludes = array(
     'leer.inc',
-    'akkordeon.inc'
+    'accordeon.inc'
 );
 
 $contentrightincludes = array(

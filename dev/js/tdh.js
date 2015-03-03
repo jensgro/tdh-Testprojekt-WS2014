@@ -4,28 +4,32 @@ var TDH = {
     /**
      * Colja
      */
-    initAkkordeon: function () {
+    initAccordeon: function () {
         "use strict";
         var speed = 700,
-            akkordeons = $('.akkordeon');
+            className = '.accordeon',
+            accordeons = $(className),
+            // get all the articles of all the accordeons
+            articles = $(accordeons).find('article');
 
-        for (var i = 0; i < akkordeons.length; i++) {
-            var akk = akkordeons[i],
-                $articles = $($(akk).find('article'));
+        for (var i = 0; i < articles.length; i++) {
+            var art = articles[i];
             
-            $articles.click(function() {
-                var $this = $(this);
-
-                $articles
-                    .filter('.isOpen')
+            $(art).click(function() {
+                // close all other opened articles of current accordeon
+                var parent = $(this).parents(className),
+                    openArticles = $(parent).find('article.isOpen');
+                
+                openArticles
                     .find('.content')
                     .slideUp(speed);
-                $articles.removeClass('isOpen');      
+                openArticles.removeClass('isOpen');
                 
-                $this
+                // slide down the current content
+                $(this)
                     .find('.content')
                     .slideDown(speed);
-                $this.addClass('isOpen');
+                $(this).addClass('isOpen');
             });
         }
     }
@@ -36,7 +40,7 @@ var TDH = {
  */
 $(function () {
     // Akkordeon
-    if ($('.akkordeon').length > 0) {
-        TDH.initAkkordeon();
+    if ($('.accordeon').length > 0) {
+        TDH.initAccordeon();
     }
 });
