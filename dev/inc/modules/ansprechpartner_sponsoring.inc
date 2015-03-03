@@ -1,6 +1,6 @@
 <!--Kontakt Formular-->
 <div class="person">
-  <img src="http://lorempixel.com/output/sports-q-c-165-89-9.jpg" alt=""/>
+  <img src="../../images/kontakt-symbol.gif" alt=""/>
   <span class="sub">Ihr Ansprechpartner f&uumlr</span>
   <a href="#" class="project-info">Sponsoring & Allgemeines</a>
   <span class="name">Heinz Wolf</span>

@@ -1,0 +1,25 @@
+.thanks{
+  width:245px;
+  font-family:Arial;
+  font-size:12px;
+  height:235px;
+  border-bottom:1px solid #B1B3B3;
+}
+.thanks span{
+  color:#6F6F6F;
+  font-weight:bold;
+  }
+.thanks p{
+  color:#19171B;
+ 
+}
+.thanks a{
+  display:block;
+  margin-top:15px;
+  text-decoration:none;
+  color:#AD1921;
+}
+.thanks a:hover,
+.thanks a:focus{
+  text-decoration:underline;
+}
