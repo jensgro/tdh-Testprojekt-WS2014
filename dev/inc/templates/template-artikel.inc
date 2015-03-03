@@ -1,4 +1,5 @@
 <?php include "inc/templates/template-parts/head.inc"; ?>
+<?php include "inc/templates/template-parts/navigation.inc"; ?>
 
 <?php
     if (isset($artikelincludes)) {

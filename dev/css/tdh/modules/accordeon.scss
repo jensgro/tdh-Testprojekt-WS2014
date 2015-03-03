@@ -1,0 +1,79 @@
+$c-border: #B1B3B3;
+$c-link: #AD1921;
+
+@mixin hov {
+  &:hover, &:focus {
+    @content;
+  }
+}
+
+/*
+Class .isOpen
+*/
+
+.accordeon {
+  margin: 30px 0;
+  h3, h4, h5 {
+    font-size: 14px;
+  }
+  h3 {
+    border-top: 2px solid $c-border;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0;
+    margin: 0;
+    cursor: pointer;
+    @include hov{
+      &:after {
+        border-left-color: $c-link;
+      }
+    }
+    
+    &:after {
+      content: "";
+      position: relative;
+      float: right;
+      display: block;
+      height: 0;
+      width: 0;
+      border: 9px solid transparent;
+      border-left-width: 12px;
+      border-left-color: $c-border;
+      margin-right: 3px;
+    }
+  }
+  h4 {
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  ul {
+    list-style: none;
+  }
+  li {
+    margin: 0;
+  }
+  
+  article {
+    &.isOpen {
+      .content {
+        display: block;
+      }
+      h3 {
+        cursor: auto;
+        color: #000;
+        &:after {
+          border: 9px solid transparent;
+          border-top-width: 12px;
+          border-top-color: $c-border;
+          margin-right: 10px;
+          
+        }
+      }      
+    }
+  }
+  
+  .content {
+    display: none;
+  }
+}
