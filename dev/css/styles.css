@@ -10,7 +10,19 @@
 
 /* Hier kommen die Module hin */
 /* @import url("tdh/modules/xxx.css"); */
+<<<<<<< HEAD
 @import url("tdh/modules/contact.css");
 @import url("tdh/modules/ansprechpartner.css");
 @import url("tdh/modules/sponsorenliste.css");
 @import url("tdh/modules/thanks.css");
+=======
+<<<<<<< HEAD
+@import url("tdh/modules/contact.css");
+@import url("tdh/modules/ansprechpartner.css");
+@import url("tdh/modules/sponsorenliste.css");
+@import url("tdh/modules/thanks.css");
+=======
+
+@import url("tdh/modules/accordeon.css");
+>>>>>>> origin/master
+>>>>>>> cca0fa8b7b2b1e1b7017b8e44380a2f6e8f10ba7
