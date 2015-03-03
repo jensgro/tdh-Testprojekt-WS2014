@@ -20,7 +20,6 @@ a{
 .active a{
     color:#AD1921;
 }
-
 a:hover,a:focus{
     text-decoration: none;
 }
@@ -48,3 +47,4 @@ a:hover,a:focus{
 .link_ebeneMeldungenFirst a:hover{
     background-color:#C9E9F7;
 }
+
