@@ -1,4 +1,4 @@
-/* Der Kern des YAML-Frameworks */
+﻿/* Der Kern des YAML-Frameworks */
 @import url("yaml/core/base.min.css");
 
 /* Der Aufbau des Layouts */
@@ -10,3 +10,4 @@
 
 /* Hier kommen die Module hin */
 /* @import url("tdh/modules/xxx.css"); */
+@import url("tdh/modules/mitarbeitertabelle.css");

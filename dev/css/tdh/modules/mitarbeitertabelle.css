@@ -1,2 +1,6 @@
 /* this is gonna be great! */
 /* This is a little branch test. wohooooo */
+
+tr:nth-child(even) {
+    background:#E1E1E1;   
+}

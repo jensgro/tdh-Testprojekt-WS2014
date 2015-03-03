@@ -1,4 +1,4 @@
-<table>
+<table class="mitarbeitertabelle">
 	<thead>
 		<tr>
 			<th>Name</th>
