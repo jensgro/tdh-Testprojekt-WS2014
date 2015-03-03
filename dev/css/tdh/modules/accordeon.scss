@@ -17,7 +17,6 @@ Class .isOpen
     font-size: 14px;
   }
   h3 {
-    border-top: 2px solid $c-border;
     font-size: 14px;
     font-weight: bold;
     padding: 10px 0;
@@ -55,6 +54,12 @@ Class .isOpen
   }
   
   article {
+    border-bottom: 2px solid $c-border;
+
+    &:first-child {
+      border-top: 2px solid $c-border;
+    }
+    
     &.isOpen {
       .content {
         display: block;
@@ -67,7 +72,6 @@ Class .isOpen
           border-top-width: 12px;
           border-top-color: $c-border;
           margin-right: 10px;
-          
         }
       }      
     }
