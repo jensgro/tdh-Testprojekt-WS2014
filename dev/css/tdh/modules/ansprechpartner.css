@@ -1,0 +1,31 @@
+.person{
+  width:165px;
+  background:#EDEDED;
+  font-family: arial;
+  padding: 5px;
+}
+.person .sub{
+  font-size:12px;
+  color: #19171B;
+  font-weight:bold;
+}
+.project-info{
+  text-decoration:none;
+  color:#AD1921;
+  display:block;
+  font-weight:bold;
+   margin-bottom:10px;
+}
+.project-info:hover{
+  text-decoration:underline;
+}
+.name{
+  font-weight:bold;
+  display:block;
+  font-size:14px;
+  margin-bottom:6px;
+}
+.tel{
+  display:block;
+  font-size:14px;
+}
