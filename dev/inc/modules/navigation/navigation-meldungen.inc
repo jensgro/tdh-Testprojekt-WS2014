@@ -12,10 +12,10 @@
       <a href="meldungen.php">Meldungen</a>
       <div class="submenu">
         <ul class="special"><!-- special LIs können natürlich zusätzlich eine active-Klasse enthalten -->
-            <li><a href="#">Überschwemmung Haiti</a></li>
-            <li><a href="#">Flüchtlingsdrama Syrien</a></li>
-            <li><a href="#">Flutkatastrophe Philippinen</a></li>
-            <li class="archive"><a href="meldungen-archiv.php">Archiv</a></li>
+            <li class="link_ebeneMeldungenFirst"><a  href="#">Überschwemmung Haiti</a></li>
+            <li class="link_ebeneMeldungen"><a  href="#">Flüchtlingsdrama Syrien</a></li>
+            <li class="link_ebeneMeldungen"><a  href="#">Flutkatastrophe Philippinen</a></li>
+            <li class="link_ebeneMeldungen archive active"><a href="meldungen-archiv.php">Archiv</a></li>
         </ul>
       </div>
     </li>
