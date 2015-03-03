@@ -23,6 +23,13 @@
 @import url("tdh/modules/thanks.css");
 =======
 
+<<<<<<< HEAD
 @import url("tdh/modules/accordeon.css");
 >>>>>>> origin/master
 >>>>>>> cca0fa8b7b2b1e1b7017b8e44380a2f6e8f10ba7
+=======
+
+@import url("tdh/modules/accordeon.css");
+@import url("tdh/modules/content-widget-t.css");
+@import url("tdh/modules/content-widget-b.css");
+>>>>>>> origin/master

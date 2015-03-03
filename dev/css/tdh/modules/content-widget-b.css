@@ -1,0 +1,15 @@
+/* styling for content widgets with blue background */
+
+.content-widget-b {
+    background-color: #C9E9F7;
+}
+
+.content-widget-b a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.content-widget-b a:hover,
+.content-widget-b a:focus {
+    color: #AD1921;
+}
