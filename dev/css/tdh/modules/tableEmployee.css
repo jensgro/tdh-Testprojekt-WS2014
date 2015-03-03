@@ -1,28 +1,28 @@
 /* this is gonna be great! */
 /* This is a little branch test. wohooooo */
 
-.mitarbeitertabelle tr:nth-child(even) {
+.tableEmployee tr:nth-child(even) {
     background:#E1E1E1;   
 }
 
-.mitarbeitertabelle td, th {
+.tableEmployee td, th {
     padding:10px 6px;
 }
 
-.mitarbeitertabelle th {
+.tableEmployee th {
     border-top:2px solid gray;
     border-bottom:2px solid gray;
     padding: 6px;
 }
 
-.mitarbeitertabelle th ~ th {
+.tableEmployee th ~ th {
        color:gray;
 }
 
-.mitarbeitertabelle {
+.tableEmployee {
     width:100%;   
 }
 
-a {
+.tableEmployee a {
  font-weight:bold;   
 }
