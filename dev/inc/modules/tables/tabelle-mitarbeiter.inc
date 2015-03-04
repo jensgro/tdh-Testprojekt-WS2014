@@ -1,9 +1,9 @@
-<table class="tableEmployee" id="tableEmployee">
+<table class="table-employee" id="table-employee">
 	<thead>
 		<tr>
-			<th class="table-employee-name">Name<div class="triangleDown" onclick="TDH.sortTable(true, false);"></div></th>
+			<th class="table-employee-name">Name<div class="triangle-down" onclick="TDH.sortTable(true, false);"></div></th>
 			<th>Telefon</th>
-			<th class="table-employee-city">Ort<div class="triangleDown" onclick="TDH.sortTable(false, false);"></div></th>
+			<th class="table-employee-city">Ort<div class="triangle-down" onclick="TDH.sortTable(false, false);"></div></th>
 		</tr>
 	</thead>
 	<tbody>

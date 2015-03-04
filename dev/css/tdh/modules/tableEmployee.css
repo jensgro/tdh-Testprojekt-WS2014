@@ -1,33 +1,33 @@
 /* this is gonna be great! */
 /* This is a little branch test. wohooooo */
 
-.tableEmployee tr:nth-child(even) {
+.table-employee tr:nth-child(even) {
     background:#E1E1E1;   
 }
 
-.tableEmployee td, th {
+.table-employee td, th {
     padding:10px 6px;
 }
 
-.tableEmployee th {
+.table-employee th {
     border-top:2px solid #6F6F6F; /* TODO: correct color */
     border-bottom:2px solid #6F6F6F; /* TODO: correct color */
     padding: 6px;
 }
 
-.tableEmployee th ~ th {
+.table-employee th ~ th {
        color:#6F6F6F;
 }
 
-.tableEmployee {
+.table-employee {
     width:100%;   
 }
 
-.tableEmployee a {
+.table-employee a {
  font-weight:bold;   
 }
 
-.tableEmployee th img {
+.table-employee th img {
     width:10px;
     height:10px;
     margin-left:5px;
@@ -36,11 +36,11 @@
     transform:rotate(180deg);
 }
 
-.tableEmployee th img:hover {
+.table-employee th img:hover {
     cursor:pointer;
 }
 
-.triangleUp, .triangleDown, .triangleUpDown {
+.triangle-up, .triangle-down, .triangle-up-down {
     position:relative;
     width:0px;
     height:0px;
@@ -51,16 +51,16 @@
     display:inline-block;
 }
 
-.triangleDown, .triangleUpDown {
+.triangle-down, .triangle-up-down {
     border-width: 6px 4px 0 4px;
     border-color: #000000 transparent transparent transparent;
 }
 
-.triangleUp:hover, .triangleDown:hover, .triangleUpDown:hover {
+.triangle-up:hover, .triangle-down:hover, .triangle-up-down:hover {
     cursor: pointer;
 }
 
-.triangleUpDown:before {
+.triangle-up-down:before {
     content:"";
     position:absolute;
     top:-13px;

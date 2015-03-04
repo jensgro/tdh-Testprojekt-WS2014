@@ -76,9 +76,9 @@ var TDH = {
             TDH.tableList.sort(sortByName);
 
             if(!descending)
-                $('.table-employee-name').html("Name<div class=\"triangleUp\" onclick=\"TDH.sortTable(true, true);\"></div>")
+                $('.table-employee-name').html("Name<div class=\"triangle-up\" onclick=\"TDH.sortTable(true, true);\"></div>")
             else
-                $('.table-employee-name').html("Name<div class=\"triangleDown\" onclick=\"TDH.sortTable(true, false);\"></div>")
+                $('.table-employee-name').html("Name<div class=\"triangle-down\" onclick=\"TDH.sortTable(true, false);\"></div>")
         }
         else {
             function sortByCity(a, b) {
@@ -93,9 +93,9 @@ var TDH = {
             TDH.tableList.sort(sortByCity);
             
             if(!descending)
-                $('.table-employee-city').html("Ort<div class=\"triangleUp\" onclick=\"TDH.sortTable(false, true);\"></div>")
+                $('.table-employee-city').html("Ort<div class=\"triangle-up\" onclick=\"TDH.sortTable(false, true);\"></div>")
             else
-                $('.table-employee-city').html("Ort<div class=\"triangleDown\" onclick=\"TDH.sortTable(false, false);\"></div>")
+                $('.table-employee-city').html("Ort<div class=\"triangle-down\" onclick=\"TDH.sortTable(false, false);\"></div>")
 
         }
 
@@ -144,7 +144,7 @@ $(function () {
         TDH.initAkkordeon();
     }
 
-    if($('#tableEmployee').length > 0) {
+    if($('#table-employee').length > 0) {
         TDH.initTablesorter();
     }
 });
