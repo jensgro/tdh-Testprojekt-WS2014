@@ -1,53 +1,57 @@
 /* this is gonna be great! */
 /* This is a little branch test. wohooooo */
 
-.tableSponsors tr:nth-child(even) {
+.table-sponsors tr:nth-child(even) {
     background:#E1E1E1;   
 }
 
-.tableSponsors td, th {
+.table-sponsors td, th {
     padding:15px;
 }
 
-.tableSponsors th {
-    border-bottom:2px solid gray; /* TODO: correct color */
+.table-sponsors th {
+    border-bottom:2px solid #6F6F6F;
     padding-bottom:20px;
 }
 
-.tableSponsors {
+.table-sponsors {
     width:100%;   
 }
 
-.tableSponsors a {
+.table-sponsors a {
  font-weight:bold;   
 }
 
 /* filter */
 
-.tableSponsorsFilter {
+.table-sponsors-filter {
     font-weight:bold; 
     margin-left:15px;
 }
 
-.tableSponsorsFilter select {
+.table-sponsors-filter select {
     margin-left:4px;
     margin-right:4px;
     text-align:center;
 }
 
-.tableSponsorsFilter span {
+.table-sponsors-filter span {
     margin-right:8px;   
 }
 
-.tableSponsorsFilter label:nth-child(n+2) {
+.table-sponsors-filter label:nth-child(n+2) {
     margin-right:10px;   
 }
 
-.tableSponsorsFilter input[type="submit"] {
+.table-sponsors-filter input[type="submit"] {
     color:#fff;
     background:#AD1921;
     border:1px solid #AD1921;
     padding: 0px 2px;
+}
+
+.table-sponsors-filter input[type="submit"]:hover {
+    background:#CC0000;
 }
 
 /* pager */
@@ -79,6 +83,6 @@
 }
 
 .pager .inactive, .pager .inactive:hover, .pager .inactive:focus {
-    color:gray; /* TODO: color */
+    color:#6F6F6F;
     background:#fff;
 }

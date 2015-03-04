@@ -1,4 +1,4 @@
-<form method="post" class="tableSponsorsFilter">
+<form method="post" class="table-sponsors-filter">
     <label for="letter">Tabelle filtern nach Anfangsbuchstabe</label>
     <select id="letter">
         <option>A</option>
