@@ -4,12 +4,12 @@
     font-size: 0.8em;
     background-color: transparent;
     border-bottom: 2px solid #B1B3B3;
-    margin-bottom: 1.5em;
+    margin: 1.5em 0;
 }
 
 .content-widget-t img {
     padding-bottom: 10px;
-    display: block;
+    display: inline-block;
 }
 
 .content-widget-t .section-title  {
