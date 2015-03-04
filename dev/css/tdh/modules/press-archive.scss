@@ -1,0 +1,33 @@
+$c-border: #B1B3B3;
+
+.press-archive {
+  .teaser {
+    margin-bottom: 15px;
+    & ~ .teaser {
+      border-top: 1px solid $c-border;
+      padding-top: 15px;
+    }
+  }
+  h4, h5 {
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  time {
+    display: block;
+    margin-top: 7px;
+  }
+  
+  header {
+    margin-bottom: 15px;
+  }
+  
+  a {
+    &.goon {
+      margin: 10px 0;
+      display: block;
+    }    
+  }
+}

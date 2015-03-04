@@ -6,11 +6,12 @@
 	$pageheadline ="Presse";
 
 	$contentleftincludes = array(
-    'leer.inc',
+        'leer.inc',
+        'presse-archiv.inc'
 	);
 
 	$contentrightincludes = array(
-    'leer.inc'
+        'leer.inc'
 	);
   
 	$sideincludes = array(
