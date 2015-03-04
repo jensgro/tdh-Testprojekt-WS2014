@@ -8,32 +8,34 @@ var TDH = {
         "use strict";
         // do whatever needed
     },
-    
-    
+
+
     /**
      * Heilige 3 Könige
      */
-    
+
     // Init the sorter
     initTablesorter: function () {
         var i = 0;
         var j = 0;
-        
+
         TDH.tableList = [];
-        
+
         $("tr td").each(function (){
-            
+
             if(j % 3 == 0)
             {
                 TDH.tableList[i] = [];
             }
-            
-            
+
+
             if(j % 3 == 0)
             {
+                TDH.tableList[i][3] = $(this).html();
+
                 var innerHTML = $(this).html();
                 var splitted = innerHTML.split(">");
-                
+
                 TDH.tableList[i][j % 3] = splitted[1].split("<")[0];
                 ++j;
             }
@@ -47,25 +49,22 @@ var TDH = {
                 TDH.tableList[i][j % 3] = $(this).html();
                 ++j;
             }
-            
+
             if(j % 3 == 0)
             {
                 ++i;
             }
-            
+
         });
 
-        console.log(TDH.tableList);
-        TDH.sortTable(false, false);
-    
     },
-    
+
     sortTable: function(sortName, descending) {
-        
-        
+
+
         if(sortName)
         {
-            function sortFunction(a, b) {
+            function sortByName(a, b) {
                 if (a[0] === b[0]) {
                     return 0;
                 }
@@ -73,11 +72,16 @@ var TDH = {
                     return (a[0] < b[0]) ? -1 : 1;
                 }
             }
-            
-            TDH.tableList.sort(sortFunction);
+
+            TDH.tableList.sort(sortByName);
+
+            if(!descending)
+                $('.table-employee-name').html("Name<div class=\"triangleUp\" onclick=\"TDH.sortTable(true, true);\"></div>")
+            else
+                $('.table-employee-name').html("Name<div class=\"triangleDown\" onclick=\"TDH.sortTable(true, false);\"></div>")
         }
         else {
-            function sortFunction(a, b) {
+            function sortByCity(a, b) {
                 if (a[2] === b[2]) {
                     return 0;
                 }
@@ -85,38 +89,49 @@ var TDH = {
                     return (a[2] < b[2]) ? -1 : 1;
                 }
             }
+
+            TDH.tableList.sort(sortByCity);
             
-            TDH.tableList.sort(sortFunction);
-        
+            if(!descending)
+                $('.table-employee-city').html("Ort<div class=\"triangleUp\" onclick=\"TDH.sortTable(false, true);\"></div>")
+            else
+                $('.table-employee-city').html("Ort<div class=\"triangleDown\" onclick=\"TDH.sortTable(false, false);\"></div>")
+
         }
-        
-        if(descending)
+
+        if(descending) {
             TDH.tableList.reverse();
-        
-        
+        }
+
+
+        console.log(TDH.tableList);
+
         var i = 0;
+        var j = 0;
         $("tr td").each(function (){    
-            
+
             if(i % 3 == 0)
             {
-                $(this).html(TDH.tableList[i][0]);
+                $(this).html(TDH.tableList[j][3]);
             }
             else if (i % 3 == 1)
             {
-                $(this).html(TDH.tableList[i][1]);
+                $(this).html(TDH.tableList[j][1]);
             }
             else if(i % 3 == 2)
             {
-                $(this).html(TDH.tableList[i][2]);
+                $(this).html(TDH.tableList[j][2]);
             }
-            
+
+
+
+
+            if(i % 3 == 2)
+                ++j;
+
             ++i;
 
-            
         });
-
-        
-        console.log(TDH.tableList);
     }
 };
 
@@ -128,7 +143,7 @@ $(function () {
     if ($('#akkordeon').length > 0) {
         TDH.initAkkordeon();
     }
-    
+
     if($('#tableEmployee').length > 0) {
         TDH.initTablesorter();
     }
