@@ -12,12 +12,17 @@
     font-weight:bold;
 }
 
-.navigation  .active{
-    list-style-type:none;
-    display:inline;
+.navigation  .active a{
+    color:#AD1921;
     
 }
-.navigation  .active a{
+
+.navigation  .active{
+    list-style-type:none;
+    
+    
+}
+.navigation  .submenu .active a{
     color:#AD1921;
     text-decoration:none;
     font-weight:bold;
@@ -28,8 +33,24 @@
     color:#6F6F6F;
     padding:5px;
     background-color:#B1B3B3;
-    margin-left:-25px;
+    margin-left:-15px;
 }
 .navigation li{
     display:inline;
 }
+.navigation .submenu a:hover{
+    background-color:aqua;
+}
+.navigation .special li:first-child a{
+    margin-left:0;
+}
+.navigation  .submenu2 .active a{
+    color:#AD1921;
+    text-decoration:none;
+    font-weight:bold;
+    display:inline;
+}
+.navigation .submenu2  a{
+    color:black;
+}
+
