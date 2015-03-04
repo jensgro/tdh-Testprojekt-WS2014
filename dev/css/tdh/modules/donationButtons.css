@@ -2,7 +2,7 @@
         position:relative;
         display:inline-block;
         color:#fff;
-        background:#000; /* TODO: color check */
+        background:#19171B;
         text-decoration:none;
         padding:6px;
         padding-right:10px;
@@ -73,7 +73,7 @@
 }
 
 .donate-button-2 .text {
-    color:gray; /* TODO: color check */
+    color:#6C6C6C;
 }
 
 .donate-button-2 .donate-colored {

@@ -10,8 +10,8 @@
 }
 
 .table-employee th {
-    border-top:2px solid #6F6F6F; /* TODO: correct color */
-    border-bottom:2px solid #6F6F6F; /* TODO: correct color */
+    border-top:2px solid #6F6F6F;
+    border-bottom:2px solid #6F6F6F;
     padding: 6px;
 }
 

@@ -10,7 +10,7 @@
 }
 
 .table-sponsors th {
-    border-bottom:2px solid gray; /* TODO: correct color */
+    border-bottom:2px solid #6F6F6F;
     padding-bottom:20px;
 }
 
@@ -83,6 +83,6 @@
 }
 
 .pager .inactive, .pager .inactive:hover, .pager .inactive:focus {
-    color:gray; /* TODO: color */
+    color:#6F6F6F;
     background:#fff;
 }

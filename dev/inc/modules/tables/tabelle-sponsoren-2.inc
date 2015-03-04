@@ -1,5 +1,5 @@
 
-<table class="tableSponsors">
+<table class="table-sponsors">
 	<thead>
 		<tr>
 			<th>Firmenlogo</th>
