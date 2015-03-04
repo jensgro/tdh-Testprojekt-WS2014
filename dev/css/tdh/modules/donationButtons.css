@@ -7,6 +7,8 @@
         padding:6px;
         padding-right:10px;
         box-shadow:1px 3px 3px rgba(0, 0, 0, 0.5);
+        width:184px; /* 5 Pixel sollten nach rechts aus der Seitenspalte rausragen, tun sie aber nicht */
+        left:-5px;
     }
     
 .donateButton1:hover, .donateButton1:focus {
@@ -28,20 +30,23 @@
 .donateButton1 h3 {
     display:inline;
     color:#fff;
-    font-size:12px;
+    font-size:14px;
     font-weight:bold;
     margin-left:20px;
 }
 
 .donateButton2 {
     position:relative;
-    left:8px;
+    left:16px;
     display:inline-block;
     color:#fff;
     text-decoration:none;
     padding:0px;
     padding-right:10px;
     box-shadow:1px 3px 3px rgba(0, 0, 0, 0.5);
+    width:155px;
+    height:36px;
+    background:#fff;
 }
 
 .donateButton2:hover, .donateButton2:focus {
@@ -49,20 +54,20 @@
 }
 
 .donateButton2:hover img {
-    left:-18px;
+    left:-20px;
     transition:0.3s;
 }
 
 .donateButton2 img {
     position:absolute;
     top:-2px;
-    left:-14px;
+    left:-16px;
 }
 
 .donateButton2 .text {
     display:inline-block;
     margin:0px;
-    margin-left:35px;
+    margin-left:40px;
     font-size:12px;
     font-weight:bold;
 }
@@ -72,5 +77,8 @@
 }
 
 .donateButton2 .donateColored {
-    color:#AD1921; /* TODO: color check */
+    color:#AD1921;
+    font-size:13px;
+    position:relative;
+    top:-4px;
 }
