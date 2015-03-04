@@ -21,7 +21,7 @@
 		<input class="name" type="text" placeholder="Ihr Name" value="" size="14">
 				
 		<label class="mail-label" required>Ihre E-Mail Addresse*</label>
-		<input class="mail" type="text" placeholder="Ihre E-Mail Addresse" value="" size="14">
+		<input class="mail" type="email" placeholder="Ihre E-Mail Addresse" value="" size="14">
 		
 		<label class="message-label" required>Nachricht*</label>
 		<small class="sub1">Hinterlassen Sie hier auch ihre Addresse oder Telefonnummer, wenn Sie m&ouml;chten, dass wir telefonisch oder schriftlich mit Ihnen in Kontakt treten
