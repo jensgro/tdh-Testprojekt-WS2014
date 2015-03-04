@@ -18,11 +18,8 @@ var TDH = {
     initTablesorter: function () {
         var i = 0;
         var j = 0;
-        /*var k = 0;*/
         
         TDH.tableList = [];
-        /*TDH.nameList = [];
-        TDH.cityList = [];*/
         
         $("tr td").each(function (){
             
@@ -34,7 +31,10 @@ var TDH = {
             
             if(j % 3 == 0)
             {
-                TDH.tableList[i][j % 3] = $(this).html()
+                var innerHTML = $(this).html();
+                var splitted = innerHTML.split(">");
+                
+                TDH.tableList[i][j % 3] = splitted[1].split("<")[0];
                 ++j;
             }
             else if (j % 3 == 1)
@@ -53,27 +53,70 @@ var TDH = {
                 ++i;
             }
             
-            
-           /*if(i % 3 == 0)
-            {
-                TDH.nameList[j] = $(this).html();
-                ++j;
+        });
+
+        console.log(TDH.tableList);
+        TDH.sortTable(false, false);
+    
+    },
+    
+    sortTable: function(sortName, descending) {
+        
+        
+        if(sortName)
+        {
+            function sortFunction(a, b) {
+                if (a[0] === b[0]) {
+                    return 0;
+                }
+                else {
+                    return (a[0] < b[0]) ? -1 : 1;
+                }
             }
-            else if (i % 3 == 2)
-            {
-                TDH.cityList[k] = $(this).html();
-                ++k;
+            
+            TDH.tableList.sort(sortFunction);
+        }
+        else {
+            function sortFunction(a, b) {
+                if (a[2] === b[2]) {
+                    return 0;
+                }
+                else {
+                    return (a[2] < b[2]) ? -1 : 1;
+                }
             }
             
-            ++i;*/
+            TDH.tableList.sort(sortFunction);
+        
+        }
+        
+        if(descending)
+            TDH.tableList.reverse();
+        
+        
+        var i = 0;
+        $("tr td").each(function (){    
+            
+            if(i % 3 == 0)
+            {
+                $(this).html(TDH.tableList[i][0]);
+            }
+            else if (i % 3 == 1)
+            {
+                $(this).html(TDH.tableList[i][1]);
+            }
+            else if(i % 3 == 2)
+            {
+                $(this).html(TDH.tableList[i][2]);
+            }
+            
+            ++i;
+
             
         });
+
         
-        /*alert(TDH.nameList);
-        alert(TDH.cityList.sort().reverse());*/
-        alert(TDH.tableList);
         console.log(TDH.tableList);
-    
     }
 };
 
