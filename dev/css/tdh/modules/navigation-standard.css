@@ -1,7 +1,8 @@
 .navigation{
     font-size:14px;
-    width:800px;
+  position:relative;
     color:#6F6F6F;
+        margin-bottom:50px;
 }
 .navigation a:hover{
     text-decoration:none;
@@ -67,4 +68,16 @@
     margin-top:100px;
     color:black;
     background-color:white;
+}
+
+.navigation div.submenu{
+    position:absolute;
+    top: 30px;
+    left:0;
+}
+.navigation div.submenu2{
+    position:absolute;
+    top: 30px;
+    left:0; 
+
 }
