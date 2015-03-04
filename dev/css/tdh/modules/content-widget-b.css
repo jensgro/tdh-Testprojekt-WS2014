@@ -4,6 +4,14 @@
     background-color: #C9E9F7;
 }
 
+.content-widget-b .title {
+    font-weight: bold;
+}
+
+.content-widget-b li {
+    list-style-type: none;
+}
+
 .content-widget-b a {
     color: #000000;
     text-decoration: underline;
@@ -12,4 +20,9 @@
 .content-widget-b a:hover,
 .content-widget-b a:focus {
     color: #AD1921;
+}
+
+.content-widget-b h4 {
+    color: #AD1921;
+
 }
