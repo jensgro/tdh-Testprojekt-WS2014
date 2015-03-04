@@ -9,7 +9,7 @@
     <li><a href="veranstaltung.php">Veranstaltungen</a></li>
     <li class="has-submenu active"><!-- Marker, um bereits an dieser Stelle zu wissen, dass noch ein Submenu kommt, wichtig für JS -->
       <a href="ueberuns-dasteam.php">Über Uns</a>
-      <div class="submenu">
+      <div class="submenu2">
         <ul>
           <li class="link_ebene2"><a href="ueberuns-dasteam.php">Das Team</a></li>
           <li class="link_ebene2"><a href="#">Mitwirkende und Helfer</a></li>

@@ -6,11 +6,11 @@
 	-->
   <ul class="navigation-standard">
     <li class="active"><a href="index.php">Start</a></li>
-    <li><a href="veranstaltung.php">Veranstaltungen</a></li>
+    <li ><a href="veranstaltung.php">Veranstaltungen</a></li>
     <li><a href="ueberuns-dasteam.php">Über Uns </a></li>
-    <li><a href="meldungen.php">Meldungen</a></li>
-    <li><a href="helfen.php">Helfen</a></li>
-    <li><a href="presse.php">Presse</a></li>
-    <li><a href="kontakt.php">Kontakt</a></li>
+    <li ><a href="meldungen.php">Meldungen</a></li>
+    <li ><a href="helfen.php">Helfen</a></li>
+    <li ><a href="presse.php">Presse</a></li>
+    <li ><a href="kontakt.php">Kontakt</a></li>
   </ul>
 </nav>  
