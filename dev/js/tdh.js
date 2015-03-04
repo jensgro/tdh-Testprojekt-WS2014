@@ -16,20 +16,22 @@ var TDH = {
             var art = articles[i];
             
             $(art).click(function() {
-                // close all other opened articles of current accordeon
-                var parent = $(this).parents(className),
-                    openArticles = $(parent).find('article.isOpen');
-                
-                openArticles
-                    .find('.content')
-                    .slideUp(speed);
-                openArticles.removeClass('isOpen');
-                
-                // slide down the current content
-                $(this)
-                    .find('.content')
-                    .slideDown(speed);
-                $(this).addClass('isOpen');
+                if (! $(this).hasClass('isOpen')) {
+                    // close all other opened articles of current accordeon
+                    var parent = $(this).parents(className),
+                        openArticles = $(parent).find('article.isOpen');
+
+                    openArticles
+                        .find('.content')
+                        .slideUp(speed);
+                    openArticles.removeClass('isOpen');
+
+                    // slide down the current content
+                    $(this)
+                        .find('.content')
+                        .slideDown(speed);
+                    $(this).addClass('isOpen');
+                }
             });
         }
     }
