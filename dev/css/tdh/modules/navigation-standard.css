@@ -17,12 +17,11 @@
     
 }
 
-.navigation  .active{
+.navigation .active{
     list-style-type:none;
-    
-    
+  
 }
-.navigation  .submenu .active a{
+.navigation .submenu .active a{
     color:#AD1921;
     text-decoration:none;
     font-weight:bold;
@@ -53,4 +52,19 @@
 .navigation .submenu2  a{
     color:black;
 }
-
+.navigation .archive a{
+    Background:white;
+    color:black;
+}
+.navigation .archive a{
+    background-color:#B1B3B3;
+}
+.navigation .month_archive li{
+    display:inline;
+}
+.navigation .submenu3 .month_archive li a{
+    display:inline-block;
+    margin-top:100px;
+    color:black;
+    background-color:white;
+}
