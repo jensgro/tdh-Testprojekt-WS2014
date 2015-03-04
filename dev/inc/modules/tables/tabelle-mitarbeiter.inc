@@ -1,9 +1,9 @@
 <table class="tableEmployee" id="tableEmployee">
 	<thead>
 		<tr>
-			<th>Name</th>
+			<th>Name<div class="triangleUpDown"></div></th>
 			<th>Telefon</th>
-			<th>Ort</th>
+			<th>Ort<div class="triangleDown"></div></th>
 		</tr>
 	</thead>
 	<tbody>

@@ -10,13 +10,13 @@
 }
 
 .tableEmployee th {
-    border-top:2px solid gray; /* TODO: correct color */
-    border-bottom:2px solid gray; /* TODO: correct color */
+    border-top:2px solid #6F6F6F; /* TODO: correct color */
+    border-bottom:2px solid #6F6F6F; /* TODO: correct color */
     padding: 6px;
 }
 
 .tableEmployee th ~ th {
-       color:gray; /* TODO: correct color */
+       color:#6F6F6F;
 }
 
 .tableEmployee {
@@ -25,4 +25,49 @@
 
 .tableEmployee a {
  font-weight:bold;   
+}
+
+.tableEmployee th img {
+    width:10px;
+    height:10px;
+    margin-left:5px;
+    position:relative;
+    top:1px;
+    transform:rotate(180deg);
+}
+
+.tableEmployee th img:hover {
+    cursor:pointer;
+}
+
+.triangleUp, .triangleDown, .triangleUpDown {
+    position:relative;
+    width:0px;
+    height:0px;
+    border-style: solid;
+    border-width: 0 4px 6px 4px;
+    border-color: transparent transparent #000000 transparent;
+    margin-left:5px;
+    display:inline-block;
+}
+
+.triangleDown, .triangleUpDown {
+    border-width: 6px 4px 0 4px;
+    border-color: #000000 transparent transparent transparent;
+}
+
+.triangleUp:hover, .triangleDown:hover, .triangleUpDown:hover {
+    cursor: pointer;
+}
+
+.triangleUpDown:before {
+    content:"";
+    position:absolute;
+    top:-13px;
+    left:-4px;
+    width:0px;
+    height:0px;
+    border-style: solid;
+    border-width: 0 4px 6px 4px;
+    border-color: transparent transparent #000000 transparent;
 }
