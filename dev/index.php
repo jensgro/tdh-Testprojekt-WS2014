@@ -34,5 +34,5 @@
 	// 			'leer.inc'
 	// );
 
-	include 'inc/templates/template-2-1.inc';
+	include 'inc/templates/template-1-2.inc';
 ?>

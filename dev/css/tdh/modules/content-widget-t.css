@@ -3,14 +3,13 @@
 .content-widget-t {
     font-size: 0.8em;
     background-color: transparent;
-    width: 245px;
-    display: inline-block;
     border-bottom: 2px solid #B1B3B3;
     margin-bottom: 1.5em;
 }
 
 .content-widget-t img {
     padding-bottom: 10px;
+    display: block;
 }
 
 .content-widget-t .section-title  {
