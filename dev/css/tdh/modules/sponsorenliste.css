@@ -1,0 +1,36 @@
+.sponsorliste{
+  font-family: arial;
+  font-size: 12px;
+  font-weight: bold;
+  color: #6F6F6F;
+  width: 760px;
+}
+.sponsorliste a{
+  color: #AD1921;
+  text-decoration: none; 
+}
+.sponsorliste a:hover,.sponsorliste a:focus{
+  text-decoration: underline; 
+}
+.sponsorliste ul{
+  list-style: none;
+  margin:8px;
+  margin-left: 0px;
+  padding:0;
+  
+}
+.sponsorliste li{
+  display:inline-block;
+  margin:2px;
+}
+.sponsorliste li a{
+   display: block;
+  transition-duration:0.2s;
+}
+.sponsorliste li a:hover, .sponsorliste li a:focus{
+  box-shadow: 0 0 3px 2px #AD1921;
+}
+.sponsorliste img{
+  display:block;
+  height:50px;
+}

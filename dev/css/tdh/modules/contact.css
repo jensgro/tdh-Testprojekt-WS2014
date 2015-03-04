@@ -1,0 +1,75 @@
+.contactform{
+  position: relative;
+  width: 760px;
+  font-family: arial;
+  font-size: 14px;
+}
+.contactform h2{
+  color: #AD1921;
+  padding: 0;
+  margin: 2px;
+}
+.contactform .sub{
+  font-size: 14px;
+  padding-top: 2px;
+}
+.contactform label{
+  position:relative;
+  font-weight: bold;
+  display: block;
+}
+.contactform small{
+  position:relative;
+  display:block;
+  width:180px; 
+  font-size: 12px;
+}
+.contactform input{
+  position: relative;
+  width: 180px;
+}
+.contactform .name{
+  left: 190px;
+  top: -16px;
+}
+.contactform .mail{ 
+  left: 190px;
+  top: -16px;
+}
+.contactform textarea{
+  position: relative;
+  left: 190px;
+  top: -94px;
+  width: 300px;
+}
+.contactform select{
+  position: relative;
+  width: 185px;
+  top: -64px;
+  left: 190px;
+}
+.contactform button{
+  position: absolute;
+  padding: 4px;
+  padding-left:12px;
+  padding-right:12px;
+  width:180px;
+  bottom:60px;
+  left: 315px;
+  background: #AD1921;
+  font-weigth: bold;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+.contactform button:hover,
+.contactform button:focus{
+  background: #cD3941
+}
+.contactform button:active{
+  box-shadow: 0 0 2px #f22;
+}
+.contactform span{
+  display: inline-block;
+  margin-bottom: 30px;
+}
