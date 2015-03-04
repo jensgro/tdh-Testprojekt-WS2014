@@ -1,4 +1,4 @@
-﻿/* Der Kern des YAML-Frameworks */
+/* Der Kern des YAML-Frameworks */
 @import url("yaml/core/base.min.css");
 
 /* Der Aufbau des Layouts */
@@ -6,16 +6,8 @@
 
 /* Vorschlag für die Typographie - aus YAML - -- wird überarbeitet */
 @import url("tdh/typography.css");
-
+@import url("tdh/modules/akkordeon.css");
 
 /* Hier kommen die Module hin */
 /* @import url("tdh/modules/xxx.css"); */
-
-@import url("tdh/modules/contact.css");
-@import url("tdh/modules/ansprechpartner.css");
-@import url("tdh/modules/sponsorenliste.css");
-@import url("tdh/modules/thanks.css");
-@import url("tdh/modules/accordeon.css");
-@import url("tdh/modules/content-widget-t.css");
-@import url("tdh/modules/content-widget-b.css");
 @import url("tdh/modules/navigation-standard.css");

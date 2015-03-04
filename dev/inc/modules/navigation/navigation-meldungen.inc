@@ -15,12 +15,12 @@
             <li><a  href="#">Überschwemmung Haiti</a></li>
             <li ><a  href="#">Flüchtlingsdrama Syrien</a></li>
             <li ><a  href="#">Flutkatastrophe Philippinen</a></li>
-            <li class=" archive active"><a href="meldungen-archiv.php">Archiv</a></li>
+            <li class="archive active"><a href="meldungen-archiv.php">Archiv</a></li>
         </ul>
       </div>
     </li>
-    <li><a class="" href="helfen.php">Helfen</a></li>
-    <li><a class="" href="presse.php">Presse</a></li>
-    <li><a class="" href="kontakt.php">Kontakt</a></li>
+    <li><a  href="helfen.php">Helfen</a></li>
+    <li><a  href="presse.php">Presse</a></li>
+    <li><a  href="kontakt.php">Kontakt</a></li>
   </ul>
 </nav>  
