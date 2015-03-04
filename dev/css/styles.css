@@ -10,7 +10,6 @@
 
 /* Hier kommen die Module hin */
 /* @import url("tdh/modules/xxx.css"); */
-
 @import url("tdh/modules/contact.css");
 @import url("tdh/modules/ansprechpartner.css");
 @import url("tdh/modules/sponsorenliste.css");
@@ -19,3 +18,6 @@
 @import url("tdh/modules/content-widget-t.css");
 @import url("tdh/modules/content-widget-b.css");
 @import url("tdh/modules/navigation-standard.css");
+@import url("tdh/modules/tableEmployee.css");
+@import url("tdh/modules/tableSponsors.css");
+@import url("tdh/modules/donationButtons.css");
