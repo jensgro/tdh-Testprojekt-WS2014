@@ -16,8 +16,10 @@
 	);
 
   $sideincludes = array(
-	   'leer.inc',
-	   'leer.inc'
+	   'spendenbuttons.inc',
+	   'ansprechpartner_presse.inc',
+	   'ansprechpartner_projekt.inc',
+	   'ansprechpartner_sponsoring.inc'
 	);
 
 	// Auf manchen Seiten wird dieses Array benötigt.
