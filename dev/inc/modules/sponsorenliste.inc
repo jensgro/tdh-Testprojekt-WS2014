@@ -1,5 +1,4 @@
-<!--Sponsorenliste-->
-<link rel="stylesheet" href="../../css/tdh/modules/sponsorenliste.css">
+
 <div class="sponsorliste">
   <span>Eine Auswahl unserer langj&auml;hrigen Sponsoren. Die vollst&auml;ndige Liste unserer Sponsoren finden <a href="#">Sie hier.</a></span>
   <ul>
