@@ -4,7 +4,7 @@
 	$navigation = "dasteam";
 
 	$contentleftincludes = array(
-        'content-widget/team.inc',
+
     	'tables/tabelle-mitarbeiter-bild.inc'
 	);
   
@@ -14,7 +14,7 @@
 	);
 
 	$sideincludes = array(
-		'leer.inc'
+		'spendenbuttons.inc'
 	);
 
 	include 'inc/templates/template-1-2.inc';

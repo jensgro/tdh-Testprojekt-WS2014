@@ -1,9 +1,14 @@
-<a href="#" class="donate-button-1">
-    <img src="images/info-icon.png" alt="Kleines i">
-    <h3>Unser Spendenkonto</h3>
-</a>
+<div class="donate-button-1">
+  <a href="#">
+      <img src="images/info-icon.png" alt="">
+      <div>Unser Spendenkonto</div>
+  </a> 
+</div>
 
-<a href="#" class="donate-button-2">
-    <img src="images/spenden-icon.png" alt="Hand überreicht ein Herz">
-    <p class="text">sicher & schnell<br><span class="donate-colored">online spenden</span></p>
-</a>
+<div class="donate-button-2">
+  <a href="#">
+      <img src="images/spenden-icon.png" alt="">
+      <div class="text">sicher &amp; schnell<br><span class="donate-colored">online spenden</span></div>
+  </a>  
+</div>
+

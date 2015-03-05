@@ -1,5 +1,8 @@
+.donate-button-1, .donate-button-2 {
+	position: absolute;
+}
+
 .donate-button-1 {
-        position:relative;
         display:inline-block;
         color:#fff;
         background:#19171B;
@@ -9,9 +12,13 @@
         box-shadow:1px 3px 3px rgba(0, 0, 0, 0.5);
         width:184px; /* 5 Pixel sollten nach rechts aus der Seitenspalte rausragen, tun sie aber nicht */
         left:-5px;
+				top: 20px;
     }
-    
-.donate-button-1:hover, .donate-button-1:focus {
+ 
+.donate-button-1 a {
+	display: block;
+}   
+.donate-button-1 a:hover, .donate-button-1 a:focus {
     text-decoration:underline;
 }
 
@@ -27,7 +34,7 @@
     left:-10px;
 }
 
-.donate-button-1 h3 {
+.donate-button-1 div {
     display:inline;
     color:#fff;
     font-size:14px;
@@ -36,8 +43,8 @@
 }
 
 .donate-button-2 {
-    position:relative;
     left:16px;
+		top: 100px;
     display:inline-block;
     color:#fff;
     text-decoration:none;
