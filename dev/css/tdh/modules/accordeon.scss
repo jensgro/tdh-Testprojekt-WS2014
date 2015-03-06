@@ -65,13 +65,17 @@ Class .isOpen
         display: block;
       }
       h3 {
-        cursor: auto;
         color: #000;
         &:after {
           border: 9px solid transparent;
           border-top-width: 12px;
           border-top-color: $c-border;
           margin-right: 10px;
+        }
+        @include hov() {
+          &:after {
+            border-top-color: $c-link;
+          }
         }
       }      
     }

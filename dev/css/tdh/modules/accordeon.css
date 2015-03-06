@@ -39,13 +39,14 @@ Class .isOpen
     .accordeon article.isOpen .content {
       display: block; }
     .accordeon article.isOpen h3 {
-      cursor: auto;
       color: #000; }
       .accordeon article.isOpen h3:after {
         border: 9px solid transparent;
         border-top-width: 12px;
         border-top-color: #B1B3B3;
         margin-right: 10px; }
+      .accordeon article.isOpen h3:hover:after, .accordeon article.isOpen h3:focus:after {
+        border-top-color: #AD1921; }
   .accordeon .content {
     display: none; }
 

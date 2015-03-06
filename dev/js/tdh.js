@@ -31,6 +31,12 @@ var TDH = {
                         .find('.content')
                         .slideDown(speed);
                     $(this).addClass('isOpen');
+                } else {
+                    // if it was open, close it
+                    $(this)
+                        .find('.content')
+                        .slideUp(speed);
+                    $(this).removeClass('isOpen');
                 }
             });
         }
