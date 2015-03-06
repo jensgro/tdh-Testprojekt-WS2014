@@ -1,7 +1,8 @@
 .navigation{
     font-size:14px;
-    width:800px;
+  position:relative;
     color:#6F6F6F;
+        margin-bottom:50px;
 }
 .navigation a:hover{
     text-decoration:none;
@@ -12,12 +13,16 @@
     font-weight:bold;
 }
 
-.navigation  .active{
-    list-style-type:none;
-    display:inline;
+.navigation  .active a{
+    color:#AD1921;
     
 }
-.navigation  .active a{
+
+.navigation .active{
+    list-style-type:none;
+  
+}
+.navigation .submenu .active a{
     color:#AD1921;
     text-decoration:none;
     font-weight:bold;
@@ -28,8 +33,51 @@
     color:#6F6F6F;
     padding:5px;
     background-color:#B1B3B3;
-    margin-left:-25px;
+    margin-left:-15px;
 }
 .navigation li{
     display:inline;
+}
+.navigation .submenu a:hover{
+    background-color:aqua;
+}
+.navigation .special li:first-child a{
+    margin-left:0;
+}
+.navigation  .submenu2 .active a{
+    color:#AD1921;
+    text-decoration:none;
+    font-weight:bold;
+    display:inline;
+}
+.navigation .submenu2  a{
+    color:black;
+}
+.navigation .archive a{
+    Background:white;
+    color:black;
+}
+.navigation .archive a{
+    background-color:#B1B3B3;
+}
+.navigation .month_archive li{
+    display:inline;
+}
+.navigation .submenu3 .month_archive li a{
+    display:inline-block;
+    margin-top:100px;
+    color:black;
+    background-color:white;
+}
+
+.navigation div.submenu{
+    position:absolute;
+    top: 30px;
+    left:0;
+}
+.navigation div.submenu2{
+    position:absolute;
+    top: 30px;
+    left:0; 
+
 }

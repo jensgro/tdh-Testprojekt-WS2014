@@ -1,0 +1,91 @@
+.donate-button-1, .donate-button-2 {
+	position: absolute;
+}
+
+.donate-button-1 {
+        display:inline-block;
+        color:#fff;
+        background:#19171B;
+        text-decoration:none;
+        padding:6px;
+        padding-right:10px;
+        box-shadow:1px 3px 3px rgba(0, 0, 0, 0.5);
+        width:184px; /* 5 Pixel sollten nach rechts aus der Seitenspalte rausragen, tun sie aber nicht */
+        left:-5px;
+				top: 20px;
+    }
+ 
+.donate-button-1 a {
+	display: block;
+}   
+.donate-button-1 a:hover, .donate-button-1 a:focus {
+    text-decoration:underline;
+}
+
+.donate-button-1:hover img, .donate-button-1:focus img {
+    left:-12px;
+    transform:scale(1.05);
+    transition:0.3s;
+}
+
+.donate-button-1 img {
+    position:absolute;
+    top:0px;
+    left:-10px;
+}
+
+.donate-button-1 div {
+    display:inline;
+    color:#fff;
+    font-size:14px;
+    font-weight:bold;
+    margin-left:20px;
+}
+
+.donate-button-2 {
+    left:16px;
+		top: 100px;
+    display:inline-block;
+    color:#fff;
+    text-decoration:none;
+    padding:0px;
+    padding-right:10px;
+    box-shadow:1px 3px 3px rgba(0, 0, 0, 0.5);
+    width:155px;
+    height:36px;
+    background:#fff;
+}
+
+.donate-button-2:hover, .donate-button-2:focus {
+    background:rgba(255, 255, 0, 0.5);
+}
+
+.donate-button-2:hover img {
+    left:-20px;
+    transition:0.3s;
+}
+
+.donate-button-2 img {
+    position:absolute;
+    top:-2px;
+    left:-16px;
+}
+
+.donate-button-2 .text {
+    display:inline-block;
+    margin:0px;
+    margin-left:40px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.donate-button-2 .text {
+    color:#6C6C6C;
+}
+
+.donate-button-2 .donate-colored {
+    color:#AD1921;
+    font-size:13px;
+    position:relative;
+    top:-4px;
+}

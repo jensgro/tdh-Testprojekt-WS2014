@@ -1,11 +1,14 @@
 /* styling for content widgets with blue background */
 
 .content-widget-b {
+    font-size: 0.8em;
     background-color: #C9E9F7;
+    padding: 10px 5px 5px 5px;
+    margin: 1.5em 0;
 }
 
-.content-widget-b .title {
-    font-weight: bold;
+.content-widget-b > * {
+    vertical-align: top;
 }
 
 .content-widget-b li {
@@ -24,5 +27,55 @@
 
 .content-widget-b h4 {
     color: #AD1921;
+}
 
+.content-widget-b h5 {
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 0;
+    padding-left: 5px;
+}
+
+.content-widget-b .col33 {
+    width: 32%;
+}
+
+.content-widget-b .col50 {
+    width: 49%;
+}
+
+.content-widget-b .col66 {
+    width: 65%;
+}
+
+.content-widget-b .col33,
+.content-widget-b .col50,
+.content-widget-b .col66 {
+    display: inline-block;
+    padding: 5px 5px;
+}
+
+.content-widget-b .col33 > *,
+.content-widget-b .col50 > *,
+.content-widget-b .col66 > * {
+    width: 100%;
+}
+
+.content-widget-b .no-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.content-widget-b .no-list li {
+    margin: 0;
+}
+
+.content-widget-b .bold {
+    font-weight: bold;
+}
+
+.content-widget-b .indent {
+    display: inline-block;
+    width: 5.5em;
 }

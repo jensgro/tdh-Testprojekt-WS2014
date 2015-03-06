@@ -5,7 +5,8 @@
   $navigation = "helfen";
 
 	$contentleftincludes = array(
-	    'leer.inc'
+	    'content-widget/helfen.inc',
+	    'content-widget/spenden.inc'
 	);
 	$contentrightincludes = array(
         'leer.inc'

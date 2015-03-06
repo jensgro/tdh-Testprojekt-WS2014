@@ -3,20 +3,22 @@
 <div class="ym-column">
     <!-- Die Inhaltsspalte -->
     <main class="ym-col1">
-      <h1 class="logo"><a href="index.php"><img src="images/logo-tdh-murgtal.gif" alt="Logo von Terre des Hommes Murgtal/Mittelbaden"><span class="ym-hideme">terre des hommes Murgtal/Mittelbaden</span></a></h1>
-
-      <?php include "inc/templates/template-parts/navigation.inc"; ?>
-      
+        <h1 class="logo"><a href="index.php"><img src="images/logo-tdh-murgtal.gif" alt="Logo von Terre des Hommes Murgtal/Mittelbaden"><span class="ym-hideme">terre des hommes Murgtal/Mittelbaden</span></a></h1>
+        
+        <?php include "inc/templates/template-parts/navigation.inc"; ?>
+        
         <h2 class="ym-hideme" id="maincnt">Der Inhaltsbereich</h2>
-
-        <?php
-            if (isset($artikelincludes)) {
-                foreach($artikelincludes as $artikel) {
-                    include 'inc/modules/'.$artikel;
-                }
-            }
-        ?>        
-
+        
+        <div class="ym-grid">
+            <div class="ym-wbox">
+              <?php
+                  foreach($contentincludes as $content) {
+                       include 'inc/modules/'.$content;
+                  }
+              ?>
+            </div>
+        </div>
+        <!-- /.ym-grid  -->
         <footer class="sitefooter">
           &copy; 2015 terre des hommes Mittelbaden/Murgtal  <a href="impressum.php">Impressum</a>
         </footer>
@@ -25,11 +27,11 @@
     <!-- Die Seitenspalte -->
     <div class="ym-col3">
         <h2 class="ym-hideme" id="sidecnt">Die Seitenspalte</h2>
-        <?php 
+        <?php
             foreach($sideincludes as $side) {
-		         include 'inc/modules/'.$side;						
+		         include 'inc/modules/'.$side;
             }
-        ?>            
+        ?>
     </div>
     <!-- /.ym-col3 -->
 </div>

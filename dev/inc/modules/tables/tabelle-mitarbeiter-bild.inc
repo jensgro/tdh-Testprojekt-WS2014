@@ -1,0 +1,1 @@
+<img src="images/team-regionen.gif" alt="Karte mit den Regionen des Teams">

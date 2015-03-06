@@ -1,0 +1,73 @@
+/* this is gonna be great! */
+/* This is a little branch test. wohooooo */
+
+.table-employee tr:nth-child(even) {
+    background:#E1E1E1;   
+}
+
+.table-employee td, th {
+    padding:10px 6px;
+}
+
+.table-employee th {
+    border-top:2px solid #6F6F6F;
+    border-bottom:2px solid #6F6F6F;
+    padding: 6px;
+}
+
+.table-employee th ~ th {
+       color:#6F6F6F;
+}
+
+.table-employee {
+    width:100%;   
+}
+
+.table-employee a {
+ font-weight:bold;   
+}
+
+.table-employee th img {
+    width:10px;
+    height:10px;
+    margin-left:5px;
+    position:relative;
+    top:1px;
+    transform:rotate(180deg);
+}
+
+.table-employee th img:hover {
+    cursor:pointer;
+}
+
+.triangle-up, .triangle-down, .triangle-up-down {
+    position:relative;
+    width:0px;
+    height:0px;
+    border-style: solid;
+    border-width: 0 4px 6px 4px;
+    border-color: transparent transparent #000000 transparent;
+    margin-left:5px;
+    display:inline-block;
+}
+
+.triangle-down, .triangle-up-down {
+    border-width: 6px 4px 0 4px;
+    border-color: #000000 transparent transparent transparent;
+}
+
+.triangle-up:hover, .triangle-down:hover, .triangle-up-down:hover {
+    cursor: pointer;
+}
+
+.triangle-up-down:before {
+    content:"";
+    position:absolute;
+    top:-13px;
+    left:-4px;
+    width:0px;
+    height:0px;
+    border-style: solid;
+    border-width: 0 4px 6px 4px;
+    border-color: transparent transparent #000000 transparent;
+}

@@ -5,12 +5,10 @@
 
 	$pageheadline ="Sponsoren";
 
-	$contentleftincludes = array(
-    'leer.inc'
-	);
-
-	$contentrightincludes = array(
-    'leer.inc'
+	$contentincludes = array(
+    'tables/tabelle-sponsoren-filter.inc',
+    'tables/tabelle-sponsoren-2.inc',
+    'tables/tabelle-sponsoren-pager.inc'
 	);
 
 	$sideincludes = array(
@@ -18,8 +16,8 @@
 	);
 
   $widecontent = array(
-  	'leer.inc'
+  	'tables/tabelle-sponsoren-1.inc'
   );
-  
-	include 'inc/templates/template-2-1.inc';
+
+	include 'inc/templates/template-3-0.inc';
 ?>

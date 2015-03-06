@@ -1,0 +1,88 @@
+/* this is gonna be great! */
+/* This is a little branch test. wohooooo */
+
+.table-sponsors tr:nth-child(even) {
+    background:#E1E1E1;   
+}
+
+.table-sponsors td, th {
+    padding:15px;
+}
+
+.table-sponsors th {
+    border-bottom:2px solid #6F6F6F;
+    padding-bottom:20px;
+}
+
+.table-sponsors {
+    width:100%;   
+}
+
+.table-sponsors a {
+ font-weight:bold;   
+}
+
+/* filter */
+
+.table-sponsors-filter {
+    font-weight:bold; 
+    margin-left:15px;
+}
+
+.table-sponsors-filter select {
+    margin-left:4px;
+    margin-right:4px;
+    text-align:center;
+}
+
+.table-sponsors-filter span {
+    margin-right:8px;   
+}
+
+.table-sponsors-filter label:nth-child(n+2) {
+    margin-right:10px;   
+}
+
+.table-sponsors-filter input[type="submit"] {
+    color:#fff;
+    background:#AD1921;
+    border:1px solid #AD1921;
+    padding: 0px 2px;
+}
+
+.table-sponsors-filter input[type="submit"]:hover {
+    background:#CC0000;
+}
+
+/* pager */
+
+.pager {
+    height:30px;
+    text-align:center;
+    margin-top:20px;  
+}
+
+.pager ul {
+    list-style-type:none;
+}
+
+.pager li {
+    display:inline-block;
+    margin:0px;
+}
+
+.pager a {
+    border:1px solid #B1B3B3;
+    padding:4px 8px;
+}
+
+.pager a:hover, .pager a:focus, .pager .selected {
+    color:white;
+    background:#AD1921;
+    text-decoration:none;
+}
+
+.pager .inactive, .pager .inactive:hover, .pager .inactive:focus {
+    color:#6F6F6F;
+    background:#fff;
+}

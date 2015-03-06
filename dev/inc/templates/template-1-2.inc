@@ -26,9 +26,15 @@
             </div>
         </div>
         <!-- /.ym-grid  -->
+        <?php 
+            foreach($widecontent as $wide) {
+		         include 'inc/modules/'.$wide;						
+            }
+        ?>  
+        
         <footer class="sitefooter">
           &copy; 2015 terre des hommes Mittelbaden/Murgtal  <a href="impressum.php">Impressum</a>
-        </footer>
+        </footer>          
     </main>
     <!-- /.ym-col1 -->
     <!-- Die Seitenspalte -->
@@ -38,7 +44,7 @@
             foreach($sideincludes as $side) {
 		         include 'inc/modules/'.$side;						
             }
-        ?>            
+        ?>
     </div>
     <!-- /.ym-col3 -->
 </div>
